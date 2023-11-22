@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Pre-final</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="default_web_client_id">73624625331-681s1jt1ehfmj33jdmqhaa4tfm1abil5.apps.googleusercontent.com</string>
+    <string name="google_desc">Google button</string>
+    <string name="facebook_desc">Facebook button</string>
+    <string name="microsoft_desc">Microsoft button</string>
+    <string name="logo">Business logo</string>
+    <string name="admin">Admin</string>
+    <string name="create">Create New item</string>
+    <string name="hello_blank_fragment">This is the launcher fragment</string>
+
+</resources>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lilypads"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".Registration">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:contentDescription="@string/logo"
+        android:layout_width="match_parent"
+        android:layout_height="127dp"
+        app:srcCompat="@drawable/logo2"
+        android:layout_marginBottom="20dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/fredoka_one"
+        android:gravity="center"
+        android:text="@string/register"
+        android:textAllCaps="true"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:background="@drawable/border"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:paddingTop="40dp"
+        android:paddingBottom="40dp"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/email2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/border"
+            android:drawableLeft="@drawable/email"
+            android:hint="@string/email"
+            android:paddingLeft="10dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:textColorHint="@color/green"
+            android:textSize="15dp"
+            tools:ignore="TextSizeCheck,TouchTargetSizeCheck"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/password2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/border"
+            android:drawableLeft="@drawable/password"
+            android:hint="@string/password"
+            android:paddingLeft="10dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:textColorHint="@color/green"
+            android:textSize="15sp"
+            tools:ignore="TextSizeCheck,TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/regis_btn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/green"
+        android:textAllCaps="true"
+        android:layout_gravity="center"
+        android:text="Register" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:text="Already have an account?"
+            android:textSize="12sp"
+            tools:ignore="TextSizeCheck" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/existing"
+            android:pointerIcon="alias"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            app:strokeColor="@color/green"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/green"
+            app:strokeWidth="2dp"
+            android:textAllCaps="true"
+            android:text="login">
+        </com.google.android.material.button.MaterialButton>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:text="or sign up with"
+        android:textSize="15sp"
+        tools:ignore="TextSizeCheck" />
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/google2"
+            android:contentDescription="@string/google_desc"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#00FFFFFF"
+            app:srcCompat="@drawable/google" />
+
+        <ImageButton
+            android:id="@+id/facebook2"
+            android:contentDescription="@string/facebook_desc"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#00FFFFFF"
+            app:srcCompat="@drawable/facebook"
+            />
+
+        <ImageButton
+            android:id="@+id/microsoft2"
+            android:contentDescription="@string/microsoft_desc"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:backgroundTint="#00FFFFFF"
+            app:srcCompat="@drawable/microsoft" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

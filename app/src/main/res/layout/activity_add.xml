@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_dash"
+    tools:context=".Add">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload new item"
+        android:fontFamily="@font/fredoka_one"
+        android:textSize="30sp"
+        android:textAllCaps="true"
+        android:gravity="center"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="100dp"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:cardCornerRadius="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/inputName"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/addfields"
+                    android:padding="10dp"
+                    android:drawableLeft="@drawable/itemname"
+                    android:hint="Enter the item's name"/>
+                <EditText
+                    android:id="@+id/inputDesc"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:background="@drawable/addfields"
+                    android:drawableLeft="@drawable/baseline_description_24"
+                    android:hint="Enter the item's description"/>
+                <EditText
+                    android:id="@+id/inputPrice"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:background="@drawable/addfields"
+                    android:drawableLeft="@drawable/price"
+                    android:hint="Enter the item's price"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/upload_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/green"
+                android:layout_gravity="center"
+                android:text="Upload"
+                android:drawableLeft="@drawable/baseline_image_24"
+                android:layout_marginTop="10dp"
+                app:cornerRadius="8sp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/savenew_btn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        app:cornerRadius="8sp"
+        android:backgroundTint="@color/green"
+        android:textColor="@color/green"
+        android:background="@drawable/button_border"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:text="Save"/>
+
+</LinearLayout>
