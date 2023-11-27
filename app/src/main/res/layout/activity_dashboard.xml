@@ -58,6 +58,7 @@
             android:backgroundTint="#00FFFFFF"
             android:src="@drawable/audrey"
             android:layout_marginLeft="10dp"
+            android:contentDescription="user icon"
             />
     </LinearLayout>
 
@@ -87,7 +88,9 @@
                     android:layout_width="85dp"
                     android:layout_height="85dp"
                     android:background="@drawable/circle_img"
-                    android:src="@drawable/cupcake" />
+                    android:src="@drawable/cupcake"
+                    android:contentDescription="cupcake button"
+                    />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -160,6 +163,7 @@ unlimited toppings to choose from!"
                 android:layout_height="60dp"
                 android:background="@drawable/circle_img"
                 android:src="@drawable/menu"
+                android:contentDescription="menu button"
                 />
             <TextView
                 android:layout_width="wrap_content"
@@ -184,6 +188,7 @@ unlimited toppings to choose from!"
                 android:layout_height="60dp"
                 android:background="@drawable/circle_img"
                 android:src="@drawable/foru"
+                android:contentDescription="for you button"
                 />
 
             <TextView
@@ -207,6 +212,7 @@ unlimited toppings to choose from!"
                 android:layout_height="60dp"
                 android:background="@drawable/circle_img"
                 android:src="@drawable/food"
+                android:contentDescription="food button"
                 />
             <TextView
                 android:layout_width="wrap_content"
@@ -230,6 +236,7 @@ unlimited toppings to choose from!"
                 android:layout_height="60dp"
                 android:background="@drawable/circle_img"
                 android:src="@drawable/drinks"
+                android:contentDescription="drinks button"
                 />
 
             <TextView
@@ -253,6 +260,7 @@ unlimited toppings to choose from!"
                 android:layout_height="60dp"
                 android:background="@drawable/circle_img"
                 android:src="@drawable/more"
+                android:contentDescription="more button"
                 />
             <TextView
                 android:layout_width="wrap_content"
@@ -283,7 +291,7 @@ unlimited toppings to choose from!"
         >
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="357dp"
             android:layout_height="wrap_content"
             android:gravity="center">
 
@@ -292,37 +300,28 @@ unlimited toppings to choose from!"
                 android:layout_height="60dp"
                 android:layout_marginLeft="10dp"
                 android:backgroundTint="#00FFFFFF"
-                android:src="@drawable/map" />
-            <ImageButton
-                android:layout_marginLeft="10dp"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:backgroundTint="#00FFFFFF"
                 android:src="@drawable/update"
+                android:contentDescription="edit button"
                 />
+
             <ImageButton
-                android:layout_marginLeft="10dp"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:backgroundTint="#00FFFFFF"
                 android:src="@drawable/home"
-                />
-            <ImageButton
-                android:id="@+id/add"
-                android:layout_marginLeft="10dp"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:backgroundTint="#00FFFFFF"
-                android:src="@drawable/add"
-                />
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="50dp"
+                android:contentDescription="home button"/>
 
             <ImageButton
-                android:layout_marginRight="10dp"
+                android:id="@+id/add"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_marginLeft="10dp"
                 android:backgroundTint="#00FFFFFF"
-                android:src="@drawable/trash" />
+                android:src="@drawable/add"
+                android:contentDescription="add item button"/>
+
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 

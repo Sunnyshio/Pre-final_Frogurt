@@ -95,7 +95,7 @@ class Add : AppCompatActivity() {
     }
 
     private fun saveDataToFirestore(itemName: String, itemDescription: String, itemPrice: String, imageUrl: String) {
-        val newItem = Item(name = itemName, description = itemDescription, price = itemPrice, url = imageUrl)
+        val newItem = Item(name = itemName, description = itemDescription, price = itemPrice, url = imageUrl, id = "")
 
         val db = FirebaseFirestore.getInstance()
 

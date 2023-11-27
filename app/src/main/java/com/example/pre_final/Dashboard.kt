@@ -40,6 +40,7 @@ class Dashboard : AppCompatActivity() {
                 val items = mutableListOf<Item>()
                 for (document in result) {
                     val item = Item(
+                        document.id,
                         document.getString("name"),
                         document.getString("description"),
                         document.getString("price"),
