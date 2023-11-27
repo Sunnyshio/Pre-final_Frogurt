@@ -16,6 +16,7 @@ class Edit : AppCompatActivity() {
 
     private lateinit var add : ImageButton
     private lateinit var home : ImageButton
+    private lateinit var itemList : ImageButton
     private lateinit var delete : Button
     private lateinit var edit: Button
 
@@ -41,7 +42,8 @@ class Edit : AppCompatActivity() {
                 .into(itemPhoto)
             itemName.text = selectedItem.name
             itemDescription.text = selectedItem.description
-            itemPrice.text = selectedItem.price
+            itemPrice.text = "${selectedItem.price} Php"
+//            itemPrice.text = selectedItem.price
 
             delete = findViewById(R.id.delete)
             delete.setOnClickListener {
@@ -68,6 +70,12 @@ class Edit : AppCompatActivity() {
             startActivity(intent)
         }
 
+        itemList = findViewById(R.id.itemList)
+        itemList.setOnClickListener {
+            val intent = Intent(this, ItemList::class.java)
+            startActivity(intent)
+        }
+
     }
 
     private fun deleteItem(itemId: String) {
@@ -78,6 +86,7 @@ class Edit : AppCompatActivity() {
                 Toast.makeText(this, "Item is removed from database", Toast.LENGTH_SHORT).show()
                 finish()
             }
+
             .addOnFailureListener {
                 Toast.makeText(this, "Failed to remove item from database", Toast.LENGTH_SHORT).show()
             }

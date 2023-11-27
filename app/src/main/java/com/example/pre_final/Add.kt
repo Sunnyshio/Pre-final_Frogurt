@@ -9,6 +9,7 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageButton
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import com.google.firebase.firestore.FirebaseFirestore
@@ -28,6 +29,8 @@ class Add : AppCompatActivity() {
     private lateinit var itemPriceEditText : EditText
     private lateinit var addButton : Button
     private lateinit var saveButton : Button
+    private lateinit var itemList : ImageButton
+    private lateinit var home : ImageButton
     private lateinit var storageReference: StorageReference
 
     @SuppressLint("MissingInflatedId")
@@ -58,6 +61,18 @@ class Add : AppCompatActivity() {
                 saveDataToFirestore(itemName, itemDescription, itemPrice, "")
             }
 
+        }
+
+        itemList = findViewById(R.id.itemList)
+        itemList.setOnClickListener {
+            val intent = Intent(this, ItemList::class.java)
+            startActivity(intent)
+        }
+
+        home = findViewById(R.id.home)
+        home.setOnClickListener {
+            val intent = Intent(this, Dashboard::class.java)
+            startActivity(intent)
         }
 
     }

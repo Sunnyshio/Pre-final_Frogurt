@@ -158,7 +158,6 @@ unlimited toppings to choose from!"
             android:orientation="vertical">
 
             <ImageButton
-                android:id="@+id/home"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:background="@drawable/circle_img"
@@ -296,6 +295,7 @@ unlimited toppings to choose from!"
             android:gravity="center">
 
             <ImageButton
+                android:id="@+id/itemList"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_marginLeft="10dp"
@@ -305,13 +305,14 @@ unlimited toppings to choose from!"
                 />
 
             <ImageButton
+                android:id="@+id/home"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:backgroundTint="#00FFFFFF"
-                android:src="@drawable/home"
-                android:layout_marginRight="50dp"
                 android:layout_marginLeft="50dp"
-                android:contentDescription="home button"/>
+                android:layout_marginRight="50dp"
+                android:backgroundTint="#00FFFFFF"
+                android:contentDescription="home button"
+                android:src="@drawable/home" />
 
             <ImageButton
                 android:id="@+id/add"

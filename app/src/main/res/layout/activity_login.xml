@@ -70,6 +70,7 @@
             android:background="@drawable/border"
             android:paddingLeft="10dp"
             android:paddingTop="15dp"
+            android:inputType="textPassword"
             android:paddingBottom="15dp"
             />
 
